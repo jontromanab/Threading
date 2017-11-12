@@ -48,12 +48,12 @@ public:
   //..
 };
 
-void function_2(stack& st)
+/*void function_2(stack& st)
 {
   int v = st.top();
   st.pop();
   process(v);
-}
+}*/
 
 void function_1(LogFile& log)
 {
@@ -80,8 +80,8 @@ int main()
 
 
 /*
- * Avoiding data race:
- * 1. Use Mutex to synchronize data access;
- * 2. Never leak a handle of data to outside
- * 3. Design interface appropriately
- * /
+ Avoiding data race:
+ 1. Use Mutex to synchronize data access;
+ 2. Never leak a handle of data to outside
+ 3. Design interface appropriately
+*/
