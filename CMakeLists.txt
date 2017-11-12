@@ -12,3 +12,4 @@ project(Threading)
 
 
 add_executable(introduction src/introduction.cpp)
+add_executable(thread_management src/thread_management.cpp)
