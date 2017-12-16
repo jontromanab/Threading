@@ -9,7 +9,9 @@ SET(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} "-std=c++11 -pthread")
 
 project(Threading)
 
-
+add_executable(thread_1 src/thread_1.cpp)
+add_executable(thread_2 src/thread_2.cpp)
+add_executable(thread_3 src/thread_3.cpp)
 
 add_executable(introduction src/introduction.cpp)
 add_executable(thread_management src/thread_management.cpp)
@@ -20,4 +22,6 @@ add_executable(condition_variable src/condition_variable.cpp)
 add_executable(future_promise src/future_promise.cpp)
 add_executable(callable_objects src/callable_objects.cpp)
 add_executable(packaged_task src/packaged_task.cpp)
-add_executable(time_constraints src/time_constraints.cpp)
+#add_executable(time_constraints src/time_constraints.cpp)
+
+
