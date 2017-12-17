@@ -12,6 +12,8 @@ project(Threading)
 add_executable(thread_1 src/thread_1.cpp)
 add_executable(thread_2 src/thread_2.cpp)
 add_executable(thread_3 src/thread_3.cpp)
+add_executable(thread_4 src/thread_4.cpp)
+add_executable(thread_5 src/thread_5.cpp)
 
 add_executable(introduction src/introduction.cpp)
 add_executable(thread_management src/thread_management.cpp)
