@@ -16,6 +16,7 @@ add_executable(thread_4 src/thread_4.cpp)
 add_executable(thread_5 src/thread_5.cpp)
 
 add_executable(thread_ex1 src/thread_ex1.cpp)
+add_executable(thread_ex2 src/thread_ex2.cpp)
 
 
 
