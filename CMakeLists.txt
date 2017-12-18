@@ -15,6 +15,10 @@ add_executable(thread_3 src/thread_3.cpp)
 add_executable(thread_4 src/thread_4.cpp)
 add_executable(thread_5 src/thread_5.cpp)
 
+add_executable(thread_ex1 src/thread_ex1.cpp)
+
+
+
 add_executable(introduction src/introduction.cpp)
 add_executable(thread_management src/thread_management.cpp)
 add_executable(race_condition_mutex src/race_condition_and_mutex.cpp)
