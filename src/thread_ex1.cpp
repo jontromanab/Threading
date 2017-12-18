@@ -52,7 +52,7 @@ int main(){
 }*/
 
 //creating using lambda function
-int main()
+/*int main()
 {
   int x = 9;
   std::thread th_obj([]{
@@ -63,5 +63,20 @@ int main()
     std::cout<<"Display main thread"<<std::endl;
   th_obj.join();
   std::cout<<"End of main func"<<std::endl;
+  return 0;
+}*/
+
+void th_func(){
+  std::cout<<"Inside thread:: ID = "<<std::this_thread::get_id()<<std::endl;
+}
+int main(){
+  std::thread th_obj1(th_func);
+  std::thread th_obj2(th_func);
+  if(th_obj1.get_id() != th_obj2.get_id())
+    std::cout<<"Both threads have different IDS "<<std::endl;
+  std::cout<<"From main thread ::ID of thread 1"<<th_obj1.get_id()<<std::endl;
+  std::cout<<"From main thread ::ID of thread 2"<<th_obj2.get_id()<<std::endl;
+  th_obj1.join();
+  th_obj2.join();
   return 0;
 }
