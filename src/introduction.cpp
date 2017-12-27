@@ -1,3 +1,15 @@
+/*
+MultiThreading:
+Pro:
+1. Fast to start
+2. Low overhead
+
+Cons:
+1. Difficult to implement
+2. Can't run on distrinuted systems
+
+*/
+
 #include <iostream>
 #include <thread>
 using namespace std;
@@ -12,7 +24,7 @@ int main()
   std::thread t1(function_1); //t1 starts running
   //t1.join(); //main thread waits for t1 to finish
 
-  t1.detach(); // t1 will run freely on its own-- its now a daemon process
+  //t1.detach(); // t1 will run freely on its own-- its now a daemon process
   //t1 did not get the chance to print. Because main thread ran so fast
   //Each thread is running independtently. So the threading is nondetermininstic which thread will come first
   //That's why need synchronization
