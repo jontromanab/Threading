@@ -10,8 +10,8 @@ void function_1()
 class Fctor{
 public:
   void operator()(string& msg){
-   // for(int i=0;i>-100;i--)
-      //cout<<"from t1 "<<i<<endl;
+   for(int i=0;i>-100;i--)
+     cout<<"from t1 "<<i<<endl;
     cout<<" t1 says: "<<msg<<endl;
     msg = "Thrust is the mother of deceit";
     cout<<"Child thread id: "<<std::this_thread::get_id()<<endl;
